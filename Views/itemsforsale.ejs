@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ManganDakita</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      >
+      <!-- Navbar content -->
+      <a class="navbar-brand" href="#"
+        ><img width="60%" src="\Images\Logo.png" alt=""
+      /></a>
+
+   
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        
+        <li class="nav-item active">
+          <a class="nav-link active" href="/itemsforsale">Items For Sale</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active" href="/contactinfo"
+            >Contact Information</a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active" href="/techstack">Technology Stack</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/signup">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/signin">Sign In</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <table border="1px">
+        <thead>
+            <th>Item ID</th>
+            <th>Item Name</th>
+            <th>Item Category</th>
+            <th>Item Price</th>
+            <th>Item Quantity</th>
+            <th>Item Picture</th>
+        </thead>
+
+        <tbody>
+
+            <% for(var i =0; i<items.length;i++) { %>
+            <tr>
+                <td><%= items[i].item_id %></td>
+                <td><%= items[i].item_name %></td>
+                <td><%= items[i].item_cat %></td>
+                <td><%= items[i].item_price %></td>
+                <td><%= items[i].item_quantity %></td>
+                <td>
+                    <img src="<%= items[i].item_picture %>" alt="item image" width="20%">
+                </td>
+            </tr>
+            <% } %>
+
+        </tbody>
+
+    </table>
+    
+    <!-- <h1 class="display-1">BTS Drawing for Sale</h1>
+    <img src="Public\Images\bts-shirt.jpg" class="rounded mx-auto d-block" alt="...">
+    <blockquote class="blockquote text-center">
+        <p class="mb-0">BTS Shirt Php 1200.</p>
+    
+    <img src="/Images/bts-bag.jpg" class="rounded mx-auto d-block" alt="...">
+    <blockquote class="blockquote text-center">
+        <p class="mb-0">Portait 1 Php 1000</p>
+
+    <img src="/images/BTS_3.jpg" class="rounded mx-auto d-block" alt="...">
+    <blockquote class="blockquote text-center">
+        <p class="mb-0">Portait 2 Php 1000</p> -->
+
+
+</body>
+</html>
